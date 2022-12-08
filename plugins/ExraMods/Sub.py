@@ -8,7 +8,7 @@ headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4)\
                 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 \
                 Safari/537.36"}
 
-
+@Client.on_message(filters.text & filters.command(["sub"]))
 def search_subs(search, chatid, obj):
     """Search subtitles."""
     obj.reset(chatid)
