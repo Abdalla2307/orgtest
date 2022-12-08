@@ -13,6 +13,7 @@ from pytz import timezone
 from pyrogram.errors import BadRequest, Unauthorized
 from plugins import web_server
 from aiohttp import web
+from extramods.sub import search_subs, get_subs
 
 # Get logging configurations
 logging.config.fileConfig("logging.conf")
